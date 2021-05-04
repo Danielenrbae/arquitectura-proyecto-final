@@ -10,8 +10,7 @@
       padding-right: 0;
       padding-left: 0; }
   :root html {
-    font-family: 'Open Sans';
-    font-size: 10px; }
+    font-family: 'Open Sans'; }
 
 @font-face {
   font-family: 'Open Sans';
@@ -223,3 +222,6 @@ strong {
 
 .w-100 {
   width: 100%; }
+
+html {
+  font-size: 10px; }

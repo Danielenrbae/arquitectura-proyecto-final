@@ -1,0 +1,19 @@
+{% extends "../../templates/template.twig" %}
+
+{% set button1 = {
+    text: "Únete ya",
+    fill: true
+} %}
+
+{% set button2 = {
+    text: "Únete ya",
+    fill: false
+} %}
+
+{% block page %}
+
+{% include '../../modules/atoms/button-primary/button-primary.twig' with button1 %}
+{% include '../../modules/atoms/button-primary/button-primary.twig' with button2 %}
+
+
+{% endblock %} 

@@ -1,0 +1,45 @@
+@import "../../../_scss/variables/variables";
+
+.pf-info3 {
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans";
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .pf-info3__title {
+    font-size: 4rem;
+    font-weight: $pf-semibold;
+    text-align: center;
+  }
+
+  .pf-info3__container {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+
+    @media screen and (max-width: 767px){
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      
+    }
+
+    .pf-container__item {
+      img {
+        max-width: 130px;
+        width: auto;
+        color: $pf-color-gray;
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
+    }
+  }
+}

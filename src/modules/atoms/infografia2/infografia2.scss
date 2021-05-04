@@ -1,0 +1,68 @@
+@import "../../../_scss/variables/variables";
+
+.pf-info2 {
+  width: 100%;
+  background-color: white;
+  font-family: "Open Sans";
+
+  .pf-info2__title {
+    font-size: 1.5rem;
+    color: $pf-color-terciary;
+    font-weight: $pf-semibold;
+  }
+
+  .pf-info2__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .pf-subtitle__text {
+      font-size: 3.5rem;
+      font-weight: $pf-semibold;
+      color: $pf-color-primary;
+    }
+
+    > a {
+      font-size: 1.5rem;
+      color: $pf-color-terciary;
+      font-weight: 300;
+      text-decoration: none;
+    }
+  }
+
+  .pf-info2__container {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+
+    .pf-container__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      a {
+          text-decoration: none;
+        img {
+          max-width: 180px;
+          
+        }
+
+        .pf-item__text {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: $pf-color-primary;
+          font-weight: $pf-semibold;
+        }
+      }
+    }
+  
+
+    @media screen and (max-width: 767px){
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 5px;
+    }
+   
+  }
+}

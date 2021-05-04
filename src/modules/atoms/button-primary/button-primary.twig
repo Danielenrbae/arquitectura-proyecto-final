@@ -1,0 +1,10 @@
+
+{#
+    text: string - introduce el texto del boton,
+    fill: boolean - comprueba el estado del boton (solo cambia el color)   
+#}
+
+
+<div class="pf-button-primary {% if fill %} pf-button-primary--fill {% endif %}">
+    <a class="pf-button-primary__text" href="#">{{ text }}</a>
+</div>

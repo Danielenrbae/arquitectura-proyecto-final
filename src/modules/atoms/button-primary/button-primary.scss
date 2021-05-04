@@ -1,0 +1,41 @@
+@import "../../../_scss/variables/variables";
+
+.pf-button-primary {
+  width: fit-content;
+  font-family: "Open Sans";
+  outline: none !important;
+  border: none;
+  padding: 10px 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid $pf-color-primary;
+
+  .pf-button-primary__text {
+    text-decoration: none;
+    font-weight: bold;
+    color: $pf-color-primary;
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    background-color: $pf-color-primary;
+    .pf-button-primary__text {
+      color: white;
+    }
+  }
+}
+
+.pf-button-primary--fill {
+
+  background-color: $pf-color-terciary;
+  border: none;
+
+  .pf-button-primary__text {
+    color: $pf-color-primary;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.8rem;
+  }
+}
