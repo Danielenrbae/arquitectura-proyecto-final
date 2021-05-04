@@ -1,0 +1,80 @@
+.b2b-collection {
+  padding: 10px;
+  overflow-x: hidden;
+  margin: 20px 0; }
+  .b2b-collection .b2b-collection-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 20px; }
+    .b2b-collection .b2b-collection-header .b2b-collection-title {
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .b2b-collection .b2b-collection-header .b2b-collection-link {
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #3a3a3a;
+      text-align: right;
+      text-decoration: underline; }
+  .b2b-collection .b2b-collection-wrapper {
+    overflow-x: auto;
+    scrollbar-width: thin;
+                          
+    scrollbar-color: #3a3a3a7a white;
+                                 }
+    .b2b-collection .b2b-collection-wrapper::-webkit-scrollbar {
+      width: 12px;
+                                         
+      height: 6px; }
+    .b2b-collection .b2b-collection-wrapper::-webkit-scrollbar-track {
+      background: transparent;
+                                      
+      height: 6px; }
+    .b2b-collection .b2b-collection-wrapper::-webkit-scrollbar-thumb {
+      background-color: #3a3a3a7a;
+                                     
+      opacity: .6;
+      border-radius: 20px;
+                                         
+      border: 3px solid transparent;
+                                               
+      height: 6px; }
+    .b2b-collection .b2b-collection-wrapper .b2b-collection-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0; }
+      .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item {
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        box-sizing: border-box; }
+        .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item a, .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item a:hover, .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item a:visited {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column; }
+        .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item img {
+          height: 161px;
+          width: auto; }
+        .b2b-collection .b2b-collection-wrapper .b2b-collection-row .b2b-collection-item .b2b-collection-text {
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #333333;
+          padding: 10px 0; }

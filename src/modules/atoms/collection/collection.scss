@@ -1,0 +1,100 @@
+.b2b-collection {
+    padding: 10px;
+    overflow-x: hidden;
+    margin: 20px 0;
+.b2b-collection-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 20px;
+
+    .b2b-collection-title {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333;
+      
+    }
+
+    .b2b-collection-link{
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #3a3a3a;
+        text-align: right;
+        text-decoration: underline;
+      }
+    }
+
+
+    .b2b-collection-wrapper {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 12px;               /* width of the entire scrollbar */    height: 6px;
+          }
+          
+          &::-webkit-scrollbar-track {
+            background: transparent;        /* color of the tracking area */    height: 6px;
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            background-color: #3a3a3a7a;    /* color of the scroll thumb */
+            opacity: .6;
+            border-radius: 20px;       /* roundness of the scroll thumb */
+            border: 3px solid transparent;  /* creates padding around scroll thumb */
+            height: 6px;
+          }
+
+          scrollbar-width: thin;          /* "auto" or "thin" */
+          scrollbar-color: #3a3a3a7a white;   /* scroll thumb and track */
+
+        .b2b-collection-row {
+            display: flex;
+            justify-content: space-between;
+
+           
+            align-items: center;
+            padding: 10px 0;
+
+            .b2b-collection-item {
+                display: flex;
+                flex-direction: column;
+                padding-right: 30px;
+                box-sizing: border-box;
+
+                a, a:hover, a:visited {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                img{
+                    height: 161px;
+                    width: auto;
+                }
+
+                .b2b-collection-text {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #333333;
+                    padding: 10px 0;
+                }
+            }
+        }
+
+    }
+}

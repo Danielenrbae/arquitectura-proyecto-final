@@ -1,0 +1,33 @@
+// GENÉRICAS
+
+$mobile-min-bp: 1023px;
+
+
+.d-none {
+  display: none !important;
+}
+
+.hide-in-mobile {
+  @media only screen and (max-width: $mobile-min-bp) {
+    display: none !important;
+  }
+}
+
+.hide-in-desktop {
+  @media only screen and (min-width: $mobile-min-bp) {
+    display: none !important;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.dblock {
+  display: block !important;
+}
+
+
+.w-100{
+  width: 100%;
+}
