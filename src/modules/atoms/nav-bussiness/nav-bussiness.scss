@@ -1,0 +1,295 @@
+@import "../../../_scss/variables/variables";
+
+.pf-nav-bussines {
+  width: 100%;
+  background-image: url("../../../Img/common/header.png");
+  // background-color: lightblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  font-family: "Open Sans";
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 65px;
+  padding-left: 90px;
+  padding-right: 30px;
+  text-align: center;
+
+  .pf-nav-bussines__logo {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 90px;
+    cursor: pointer;
+  }
+
+  .pf-nav-bussines__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .pf-container__subcontainer {
+      display: block;
+    }
+
+    .pf-container__logged {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pf-container__desplegable {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      > img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .pf-container__menu {
+      width: auto;
+      font-size: 1.5rem;
+      font-weight: $pf-semibold;
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin-left: 60px;
+
+      .pf-menu__item {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > a {
+          width: 100%;
+          padding: 5px 20px;
+          color: $pf-color-primary;
+          font-weight: $pf-semibold;
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: $pf-color-terciary;
+            z-index: 9999;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover {
+            font-weight: bold;
+            &::after {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    .pf-container__auth {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+
+      .pf-auth__icon{
+        width: 30px;
+        height: 30px;
+      }
+
+      .pf-auth__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .pf-auth__login {
+          color: $pf-color-primary;
+          font-weight: $pf-semibold;
+          font-size: 1.5rem;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .pf-container__cart {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 6px 4px 7px;
+
+      &:hover {
+        background-color: $pf-color-light-gray;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 10px;
+
+    .pf-nav-bussines__container {
+      .pf-container__menu {
+        gap: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .pf-nav-bussines__container {
+      justify-content: flex-end;
+      gap: 10px;
+
+      .pf-container__desplegable {
+        display: block;
+      }
+      .pf-container__menu {
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+
+      .pf-container__auth {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.pf-nav-bussines__desplegable {
+  display: none;
+  background-color: $pf-color-light-gray;
+  padding: 20px;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 9999;
+
+  &.show {
+    display: block;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: $pf-color-light-gray;
+    position: absolute;
+    top: -9px;
+    right: 63px;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+
+  @media screen and (min-width: 767px) {
+    &.show {
+      display: none;
+    }
+  }
+
+  .pf-container__menu {
+    list-style: none;
+    margin-bottom: 20px;
+
+    .pf-menu__item {
+      padding: 20px 10px;
+      border-top: 1px solid $pf-color-gray;
+
+      &:first-child {
+        border: none;
+        padding-top: 0px;
+      }
+      &:last-child {
+        border-bottom: 1px solid $pf-color-gray;
+      }
+
+      > a {
+        color: $pf-color-primary;
+        font-weight: $pf-semibold;
+      }
+    }
+  }
+
+  .pf-container__auth {
+    width: 100%;
+    padding: 10px;
+
+    .pf-auth__logged{
+        width: 100%;
+        margin-top: 20px;
+
+      .pf-logged__menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .pf-menu__item{
+          > a {
+            text-decoration: none;
+            font-weight: $pf-semibold;
+            color: $pf-color-primary;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            > img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          &:first-child{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: $pf-color-primary
+          }
+        }
+      }
+    }
+
+    .pf-auth__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .pf-auth__login {
+        margin-bottom: 5px;
+        font-weight: $pf-semibold;
+        color: $pf-color-primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
