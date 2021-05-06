@@ -78,10 +78,56 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 50px; }
+      gap: 50px;
+      position: relative; }
       .pf-nav .pf-nav__container .pf-container__auth .pf-auth__icon {
         width: 30px;
-        height: 30px; }
+        height: 30px;
+        cursor: pointer; }
+      .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options {
+        display: none;
+        position: absolute;
+        background-color: #F5F5F5;
+        top: 50px;
+        right: -5px;
+        width: 155px;
+        padding: 20px;
+        border-radius: 10px; }
+        @media screen and (max-width: 767px) {
+          .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options {
+            display: none; } }
+        .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options .pf-options__menu {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center; }
+          .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item:first-child {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2E5056;
+            margin-bottom: 10px; }
+          .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2E5056;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px; }
+            .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a > img {
+              width: 15px;
+              height: 15px; }
+        .pf-nav .pf-nav__container .pf-container__auth .pf-auth__options::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-color: #F5F5F5;
+          position: absolute;
+          top: -7px;
+          right: 6px;
+          transform: rotate(45deg);
+          z-index: 0; }
       .pf-nav .pf-nav__container .pf-container__auth .pf-auth__buttons {
         display: flex;
         align-items: center;

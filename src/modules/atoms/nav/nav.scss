@@ -104,10 +104,71 @@
       align-items: center;
       justify-content: space-between;
       gap: 50px;
+      position: relative;
 
-      .pf-auth__icon{
+      .pf-auth__icon {
         width: 30px;
         height: 30px;
+        cursor: pointer;
+      }
+
+      .pf-auth__options {
+        display: none;
+        position: absolute;
+        background-color: $pf-color-light-gray;
+        top: 50px;
+        right: -5px;
+        width: 155px;
+        padding: 20px;
+        border-radius: 10px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        .pf-options__menu {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          .pf-menu__item {
+
+            &:first-child{
+              font-size: 1.5rem;
+              font-weight: bold;
+              color: $pf-color-primary;
+              margin-bottom: 10px;
+            }
+
+            > a {
+              font-size: 1.2rem;
+              font-weight: $pf-semibold;
+              color: $pf-color-primary;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 10px;
+              > img{
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+        }
+
+        &::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-color: $pf-color-light-gray;
+          position: absolute;
+          top: -7px;
+          right: 6px;
+          transform: rotate(45deg);
+          z-index: 0;
+        }
       }
 
       .pf-auth__buttons {
@@ -240,11 +301,11 @@
     width: 100%;
     padding: 10px;
 
-    .pf-auth__logged{
-        width: 100%;
-        margin-top: 20px;
+    .pf-auth__logged {
+      width: 100%;
+      margin-top: 20px;
 
-      .pf-logged__menu{
+      .pf-logged__menu {
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -252,7 +313,7 @@
         justify-content: center;
         gap: 20px;
 
-        .pf-menu__item{
+        .pf-menu__item {
           > a {
             text-decoration: none;
             font-weight: $pf-semibold;
@@ -269,10 +330,10 @@
             }
           }
 
-          &:first-child{
+          &:first-child {
             font-size: 1.8rem;
             font-weight: bold;
-            color: $pf-color-primary
+            color: $pf-color-primary;
           }
         }
       }
