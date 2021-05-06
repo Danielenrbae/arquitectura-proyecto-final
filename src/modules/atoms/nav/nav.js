@@ -1,10 +1,3 @@
-$(document).ready(function(){
-
-  
-  
-
-
-
 
 $(".pf-container__desplegable").on("click", function () {
 
@@ -12,8 +5,3 @@ $(".pf-container__desplegable").on("click", function () {
  
 
 });
-
-});
-
-
-

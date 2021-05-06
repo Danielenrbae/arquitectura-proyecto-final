@@ -3,7 +3,7 @@
   font-family: "Open Sans";
   outline: none !important;
   border: none;
-  padding: 10px 40px;
+  padding: 7px 30px;
   text-align: center;
   cursor: pointer;
   background-color: white;
@@ -12,7 +12,7 @@
     text-decoration: none;
     font-weight: bold;
     color: #2E5056;
-    font-size: 1.8rem; }
+    font-size: 1.5rem; }
   .pf-button-primary:hover {
     background-color: #2E5056; }
     .pf-button-primary:hover .pf-button-primary__text {
