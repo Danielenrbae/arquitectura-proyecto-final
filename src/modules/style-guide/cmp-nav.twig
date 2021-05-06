@@ -3,7 +3,9 @@
 
 {% block page %}
 
-{% include '../../modules/atoms/nav/nav.twig' %}
+{% include '../../modules/atoms/nav/nav.twig' with {
+    logeado: false
+}%}
 
 
 {% endblock %} 

@@ -1,4 +1,9 @@
 
+
+{#
+    logeado: boolean    
+#}
+
 <nav class="pf-nav">
     <div class="pf-nav__logo">
         <img class="img-fluid" src="../../../assets/Img/common/favicon.png" alt="Logo"/>
@@ -17,24 +22,36 @@
 
         </ul>
 
-     
-        <div class="pf-container__auth">
-            <div class="pf-auth__buttons">
-                
-                <a class="pf-auth__login" href="#">INICIAR SESIÓN</a>
-                {% include "../button-primary/button-primary.twig" with {
-                    text: "REGISTRAR",
-                    fill: false
-                } %}
-            </div>
-        </div>
+        
+     <div class="pf-container__logged">
+        
+                <div class="pf-container__auth">
 
-        <div class="pf-container__cart">
-            <a href="#"><img src="../../../assets/Img/icons/shopping-bag.svg" alt="Carrito"/></a>
-        </div>
+                    {% if logeado %}
+                        <a href="#"><img class="pf-auth__icon" src="../../../assets/Img/icons/icon-user.svg" alt="Icono usuario"></a>
+                    {% else %}
+                        <div class="pf-auth__buttons">
+                
+                            <a class="pf-auth__login" href="#">INICIAR SESIÓN</a>
+                            {% include "../button-primary/button-primary.twig" with {
+                                text: "REGISTRAR",
+                                fill: false
+                            } %}
+                        </div>
+                    {% endif %}
+
+                </div>
+       
+            <div class="pf-container__cart">
+                <a href="#"><img src="../../../assets/Img/icons/shopping-bag.svg" alt="Carrito"/></a>
+            </div>
+     </div>
 
      </div>
     </nav>
+
+
+
 
     <div class="pf-nav__desplegable">
         <ul class="pf-container__menu">
@@ -48,13 +65,27 @@
 
      
         <div class="pf-container__auth">
-            <div class="pf-auth__buttons">
-                
-                <a class="pf-auth__login" href="#">INICIAR SESIÓN</a>
-                {% include "../button-primary/button-primary.twig" with {
-                    text: "REGISTRAR",
-                    fill: false
-                } %}
-            </div>
+      
+            {% if logeado %}
+
+                <div class="pf-auth__logged">
+                    <ul class="pf-logged__menu">
+                        <li class="pf-menu__item"><span>¡Hola! DANIEL</span></li>
+                        <li class="pf-menu__item"><a href="#">Mi Perfil</a></li>
+                        <li class="pf-menu__item"><a href="#">Mis Pedidos</a></li>
+                        <li class="pf-menu__item"><a href="#">Cerrar Sesión <img src="../../../assets/Img/icons/log-out.svg" alt="Icono cerrar sesion"></a></li>
+                    </ul>
+                </div>
+            {% else %}
+                <div class="pf-auth__buttons">
+        
+                    <a class="pf-auth__login" href="#">INICIAR SESIÓN</a>
+                    {% include "../button-primary/button-primary.twig" with {
+                        text: "REGISTRAR",
+                        fill: false
+                    } %}
+                </div>
+            {% endif %}
+        
         </div>
     </div>

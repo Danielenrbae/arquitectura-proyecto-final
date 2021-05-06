@@ -1,5 +1,6 @@
 .pf-nav {
   width: 100%;
+  background-image: url("../../../Img/common/header.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
@@ -23,6 +24,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .pf-nav .pf-nav__container .pf-container__subcontainer {
+      display: block; }
+    .pf-nav .pf-nav__container .pf-container__logged {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     .pf-nav .pf-nav__container .pf-container__desplegable {
       display: none;
       align-items: center;
@@ -72,6 +79,9 @@
       align-items: center;
       justify-content: space-between;
       gap: 50px; }
+      .pf-nav .pf-nav__container .pf-container__auth .pf-auth__icon {
+        width: 30px;
+        height: 30px; }
       .pf-nav .pf-nav__container .pf-container__auth .pf-auth__buttons {
         display: flex;
         align-items: center;
@@ -119,10 +129,25 @@
   display: none;
   background-color: #F5F5F5;
   padding: 20px;
-  font-family: 'Open Sans';
-  font-size: 1.5rem; }
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 9999; }
   .pf-nav__desplegable.show {
     display: block; }
+  .pf-nav__desplegable::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #F5F5F5;
+    position: absolute;
+    top: -9px;
+    right: 63px;
+    transform: rotate(45deg);
+    z-index: 0; }
+  @media screen and (min-width: 767px) {
+    .pf-nav__desplegable.show {
+      display: none; } }
   .pf-nav__desplegable .pf-container__menu {
     list-style: none;
     margin-bottom: 20px; }
@@ -132,6 +157,47 @@
       .pf-nav__desplegable .pf-container__menu .pf-menu__item:first-child {
         border: none;
         padding-top: 0px; }
+      .pf-nav__desplegable .pf-container__menu .pf-menu__item:last-child {
+        border-bottom: 1px solid #D4D4D4; }
       .pf-nav__desplegable .pf-container__menu .pf-menu__item > a {
         color: #2E5056;
         font-weight: 600; }
+  .pf-nav__desplegable .pf-container__auth {
+    width: 100%;
+    padding: 10px; }
+    .pf-nav__desplegable .pf-container__auth .pf-auth__logged {
+      width: 100%;
+      margin-top: 20px; }
+      .pf-nav__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; }
+        .pf-nav__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a {
+          text-decoration: none;
+          font-weight: 600;
+          color: #2E5056;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px; }
+          .pf-nav__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a > img {
+            width: 20px;
+            height: 20px; }
+        .pf-nav__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item:first-child {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #2E5056; }
+    .pf-nav__desplegable .pf-container__auth .pf-auth__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .pf-nav__desplegable .pf-container__auth .pf-auth__buttons .pf-auth__login {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #2E5056;
+        text-decoration: none; }
