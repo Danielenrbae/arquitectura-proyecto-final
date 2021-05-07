@@ -1,0 +1,204 @@
+@import "../../../_scss/variables/variables";
+
+.pf-footer {
+  text-align: center;
+  font-family: "Open Sans";
+  width: 100%;
+  padding-top: 30px; //cambiar
+  padding: 30px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../../Img/common/pf-fondo-footer.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+
+  .pf-footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .pf-container__title {
+      font-weight: $pf-semibold;
+      font-size: 1.8rem;
+      color: $pf-color-terciary;
+    }
+
+    .pf-container__subtitle {
+      font-weight: bold;
+      color: #f2f2f2;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .pf-button-primary{
+        &:hover {
+            background-color: $pf-color-terciary;
+            .pf-button-primary__text {
+              color: white;
+            }
+          }
+    }
+  }
+
+  .pf-footer__nav {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 65px;
+    position: relative;
+    padding-left: 90px;
+    padding-right: 30px;
+    gap: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .pf-nav__logo {
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 90px;
+      cursor: pointer;
+    }
+
+    .pf-container__menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 20px;
+
+      .pf-menu__item {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > a {
+          width: 100%;
+          padding: 5px 20px;
+          color: #f2f2f2;
+          font-weight: $pf-semibold;
+          text-decoration: none;
+          position: relative;
+          font-size: 1.5rem;
+          font-weight: $pf-semibold;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #f2f2f2;
+            z-index: 9999;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover {
+            font-weight: bold;
+            &::after {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    .pf-container__snetworks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .pf-footer__policy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f2f2f2;
+    padding: 20px 30px;
+
+    > div {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .pf-policy__list {
+      text-align: center;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      .pf-list__item {
+        font-size: 1.5rem;
+        font-weight: $pf-semibold;
+        > a {
+          color: #f2f2f2;
+        }
+      }
+    }
+
+    .pf-policy__idioms {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      gap: 30px;
+
+      .pf-idioms__item {
+        font-size: 1.5rem;
+        font-weight: $pf-semibold;
+
+        > a {
+          color: #f2f2f2;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .pf-footer__nav {
+      gap: 50px;
+    }
+
+    .pf-footer__policy {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .pf-footer__nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 30px;
+
+      .pf-nav__logo {
+        display: none;
+      }
+
+      .pf-container__menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
