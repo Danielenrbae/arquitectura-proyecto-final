@@ -35,14 +35,6 @@
       margin-bottom: 20px;
     }
 
-    .pf-button-primary{
-        &:hover {
-            background-color: $pf-color-terciary;
-            .pf-button-primary__text {
-              color: white;
-            }
-          }
-    }
   }
 
   .pf-footer__nav {

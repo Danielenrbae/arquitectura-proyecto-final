@@ -27,10 +27,6 @@
       color: #f2f2f2;
       font-size: 3rem;
       margin-bottom: 20px; }
-    .pf-footer .pf-footer__container .pf-button-primary:hover {
-      background-color: #24BFA3; }
-      .pf-footer .pf-footer__container .pf-button-primary:hover .pf-button-primary__text {
-        color: white; }
   .pf-footer .pf-footer__nav {
     margin-top: 20px;
     width: 100%;
