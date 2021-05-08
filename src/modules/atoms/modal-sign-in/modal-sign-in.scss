@@ -1,5 +1,8 @@
 @import "../../../_scss/variables/variables";
-.pf-modal-sign-up {
+
+
+@import "../../../_scss/variables/variables";
+.pf-modal-sign-in {
   background-color: rgba(164, 226, 219, 0.25);
   backdrop-filter: blur(14px);
   text-align: center;
@@ -17,7 +20,7 @@
       border: none;
       background-color: white;
 
-      .pf-modal-sign-up__close {
+      .pf-modal-sign-in__close {
         content: "";
         background-image: url("../../../Img/icons/icon-close-gray.svg");
         background-size: 100% 100%;
@@ -37,14 +40,14 @@
         justify-content: center;
         padding: 50px 0px;
 
-        .pf-modal-sign-up__title {
+        .pf-modal-sign-in__title {
           color: $pf-color-primary;
           font-weight: bold;
           font-size: 2.5rem;
           margin-bottom: 50px;
         }
 
-        .pf-modal-sign-up__form {
+        .pf-modal-sign-in__form {
           width: 85%;
           display: flex;
           flex-direction: column;
@@ -55,7 +58,17 @@
           > .form-group {
             width: 85%;
             display: flex;
+            align-items: center;
+            justify-content: flex-end;
             gap: 10px;
+
+            > span {
+                > a {
+                    color: $pf-color-terciary;
+                    font-weight: $pf-semibold;
+                    font-size: 1.2rem;
+                }
+            }
 
             .pf-form__select{
                 height: fit-content;
@@ -93,7 +106,7 @@
           }
         }
 
-        .pf-modal-sign-up__login{
+        .pf-modal-sign-in__login{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -110,18 +123,9 @@
                 color: $pf-color-terciary;
                 font-size: 1.2rem;
                 font-weight: $pf-semibold;
-                margin-bottom: 50px;
+                
             }
 
-            p{
-                font-size: 1rem;
-                color: #979797;
-                > a{
-                    font-size: 1rem;
-                    color: $pf-color-terciary;
-                    font-weight: $pf-semibold;
-                }
-            }
         }
       }
     }

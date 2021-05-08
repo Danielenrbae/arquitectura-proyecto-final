@@ -779,6 +779,65 @@
     width: 100%;
   }
 }
+.pf-info3 {
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans";
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pf-info3 .pf-info3__title {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pf-info3 .pf-info3__container {
+  width: 100%;
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .pf-info3 .pf-info3__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.pf-info3 .pf-info3__container .pf-container__item img {
+  max-width: 130px;
+  width: auto;
+  color: #D4D4D4;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
 .pf-info2 {
   width: 100%;
   background-color: white;
@@ -859,65 +918,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
   }
-}
-.pf-info3 {
-  width: 100%;
-  height: auto;
-  font-family: "Open Sans";
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.pf-info3 .pf-info3__title {
-  font-size: 4rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.pf-info3 .pf-info3__container {
-  width: 100%;
-  margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .pf-info3 .pf-info3__container {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-.pf-info3 .pf-info3__container .pf-container__item img {
-  max-width: 130px;
-  width: auto;
-  color: #D4D4D4;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.5;
 }
 .pf-info4 {
   width: 100%;
@@ -1113,6 +1113,170 @@
     margin-right: 0;
   }
 }
+.pf-modal-sign-in {
+  background-color: rgba(164, 226, 219, 0.25);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+@media (min-width: 576px) {
+  .pf-modal-sign-in .modal-dialog {
+    max-width: 600px;
+  }
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content {
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px 6px #D4D4D4;
+  box-shadow: 0 3px 6px #D4D4D4;
+  border: none;
+  background-color: white;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .pf-modal-sign-in__close {
+  content: "";
+  background-image: url("../Img/icons/icon-close-gray.svg");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__title {
+  color: #2E5056;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form > .form-group {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form > .form-group > span > a {
+  color: #24BFA3;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form > .form-group .pf-form__select {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #011F26;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form > .form-group > .form-control {
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form > .form-group > .form-control:focus {
+  border: none;
+  border-bottom: 1.5px solid #D4D4D4;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form .pf-form__submit {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  background-color: #24BFA3;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  padding: 10px;
+  width: 280px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__form .pf-form__submit:hover {
+  background-color: #2E5056;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__login > span {
+  color: #D4D4D4;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__login > a {
+  color: #24BFA3;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 .pf-modal-sign-up {
   background-color: rgba(164, 226, 219, 0.25);
   -webkit-backdrop-filter: blur(14px);
@@ -1163,7 +1327,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 60px 0px;
+  padding: 50px 0px;
 }
 
 .pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__title {
@@ -1276,458 +1440,6 @@
   font-size: 1rem;
   color: #24BFA3;
   font-weight: 600;
-}
-.pf-nav-bussines {
-  width: 100%;
-  background-image: url("../Img/common/header.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat-x;
-  font-family: "Open Sans";
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  min-height: 65px;
-  padding-left: 90px;
-  padding-right: 30px;
-  text-align: center;
-}
-
-.pf-nav-bussines .pf-nav-bussines__logo {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 90px;
-  cursor: pointer;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__subcontainer {
-  display: block;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__logged {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable {
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable > img {
-  width: 30px;
-  height: 30px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
-  width: auto;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  margin-left: 60px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a {
-  width: 100%;
-  padding: 5px 20px;
-  color: #2E5056;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background: #24BFA3;
-  z-index: 9999;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a:hover {
-  font-weight: bold;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a:hover::after {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__icon {
-  width: 30px;
-  height: 30px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options {
-  display: none;
-  position: absolute;
-  background-color: #F5F5F5;
-  top: 60px;
-  right: 20px;
-  width: 155px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options {
-    display: none;
-  }
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item:first-child {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2E5056;
-  margin-bottom: 10px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #2E5056;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a > img {
-  width: 15px;
-  height: 15px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-color: #F5F5F5;
-  position: absolute;
-  top: -7px;
-  right: 9px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  z-index: 0;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons .pf-auth__login {
-  color: #2E5056;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons .pf-auth__login:hover {
-  font-weight: bold;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart {
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 7px 6px 4px 7px;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart:hover {
-  background-color: #F5F5F5;
-}
-
-.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart img {
-  width: 30px;
-  height: 30px;
-}
-
-@media screen and (max-width: 1024px) {
-  .pf-nav-bussines {
-    padding: 10px;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
-    gap: 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .pf-nav-bussines .pf-nav-bussines__container {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable {
-    display: block;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
-    display: none;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu.show {
-    display: block;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth {
-    display: none;
-  }
-
-  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth.show {
-    display: block;
-  }
-}
-
-.pf-nav-bussines__desplegable {
-  display: none;
-  background-color: #F5F5F5;
-  padding: 20px;
-  font-family: "Open Sans";
-  font-size: 1.5rem;
-  position: relative;
-  z-index: 9999;
-}
-
-.pf-nav-bussines__desplegable.show {
-  display: block;
-}
-
-.pf-nav-bussines__desplegable::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-color: #F5F5F5;
-  position: absolute;
-  top: -9px;
-  right: 20px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  z-index: 0;
-}
-
-@media screen and (min-width: 767px) {
-  .pf-nav-bussines__desplegable.show {
-    display: none;
-  }
-}
-
-.pf-nav-bussines__desplegable .pf-container__menu {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item {
-  padding: 20px 10px;
-  border-top: 1px solid #D4D4D4;
-}
-
-.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item:first-child {
-  border: none;
-  padding-top: 0px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item:last-child {
-  border-bottom: 1px solid #D4D4D4;
-}
-
-.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item > a {
-  color: #2E5056;
-  font-weight: 600;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth {
-  width: 100%;
-  padding: 10px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #2E5056;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a > img {
-  width: 20px;
-  height: 20px;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item:first-child {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2E5056;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__buttons .pf-auth__login {
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: #2E5056;
-  text-decoration: none;
 }
 .pf-nav {
   width: 100%;
@@ -2178,6 +1890,458 @@
 }
 
 .pf-nav__desplegable .pf-container__auth .pf-auth__buttons .pf-auth__login {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2E5056;
+  text-decoration: none;
+}
+.pf-nav-bussines {
+  width: 100%;
+  background-image: url("../Img/common/header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  font-family: "Open Sans";
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  min-height: 65px;
+  padding-left: 90px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.pf-nav-bussines .pf-nav-bussines__logo {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 90px;
+  cursor: pointer;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__subcontainer {
+  display: block;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable > img {
+  width: 30px;
+  height: 30px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 60px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a {
+  width: 100%;
+  padding: 5px 20px;
+  color: #2E5056;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #24BFA3;
+  z-index: 9999;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a:hover {
+  font-weight: bold;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__menu .pf-menu__item > a:hover::after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options {
+  display: none;
+  position: absolute;
+  background-color: #F5F5F5;
+  top: 60px;
+  right: 20px;
+  width: 155px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options {
+    display: none;
+  }
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2E5056;
+  margin-bottom: 10px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2E5056;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options .pf-options__menu .pf-menu__item > a > img {
+  width: 15px;
+  height: 15px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__options::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: -7px;
+  right: 9px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons .pf-auth__login {
+  color: #2E5056;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__auth .pf-auth__buttons .pf-auth__login:hover {
+  font-weight: bold;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 7px 6px 4px 7px;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart:hover {
+  background-color: #F5F5F5;
+}
+
+.pf-nav-bussines .pf-nav-bussines__container .pf-container__cart img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pf-nav-bussines {
+    padding: 10px;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pf-nav-bussines .pf-nav-bussines__container {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__desplegable {
+    display: block;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu {
+    display: none;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__menu.show {
+    display: block;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth {
+    display: none;
+  }
+
+  .pf-nav-bussines .pf-nav-bussines__container .pf-container__auth.show {
+    display: block;
+  }
+}
+
+.pf-nav-bussines__desplegable {
+  display: none;
+  background-color: #F5F5F5;
+  padding: 20px;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.pf-nav-bussines__desplegable.show {
+  display: block;
+}
+
+.pf-nav-bussines__desplegable::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: -9px;
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .pf-nav-bussines__desplegable.show {
+    display: none;
+  }
+}
+
+.pf-nav-bussines__desplegable .pf-container__menu {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item {
+  padding: 20px 10px;
+  border-top: 1px solid #D4D4D4;
+}
+
+.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item:first-child {
+  border: none;
+  padding-top: 0px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item:last-child {
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.pf-nav-bussines__desplegable .pf-container__menu .pf-menu__item > a {
+  color: #2E5056;
+  font-weight: 600;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth {
+  width: 100%;
+  padding: 10px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2E5056;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item > a > img {
+  width: 20px;
+  height: 20px;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__logged .pf-logged__menu .pf-menu__item:first-child {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2E5056;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-nav-bussines__desplegable .pf-container__auth .pf-auth__buttons .pf-auth__login {
   margin-bottom: 5px;
   font-weight: 600;
   color: #2E5056;
