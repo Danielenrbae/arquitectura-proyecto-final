@@ -1,0 +1,30 @@
+.pf-breadcrumb {
+  font-family: "Open Sans"; }
+  .pf-breadcrumb .breadcrumb {
+    background-color: white;
+    gap: 20px; }
+    .pf-breadcrumb .breadcrumb .breadcrumb-item {
+      display: flex;
+      align-items: center; }
+      .pf-breadcrumb .breadcrumb .breadcrumb-item > a {
+        font-weight: 600;
+        color: #24BFA3;
+        font-size: 1.5rem; }
+      .pf-breadcrumb .breadcrumb .breadcrumb-item::before {
+        margin-right: 10px;
+        content: "";
+        background-image: url("../../../Img/icons/chevron-right.svg");
+        width: 15px;
+        height: 15px;
+        background-size: 100% 100%; }
+      .pf-breadcrumb .breadcrumb .breadcrumb-item:first-child::before {
+        content: "";
+        background-image: none; }
+      .pf-breadcrumb .breadcrumb .breadcrumb-item:last-child > a {
+        font-weight: bold;
+        color: #011F26; }
+  @media screen and (max-width: 767px) {
+    .pf-breadcrumb .breadcrumb {
+      gap: 10px; }
+      .pf-breadcrumb .breadcrumb .breadcrumb-item::before {
+        margin-right: 0; } }

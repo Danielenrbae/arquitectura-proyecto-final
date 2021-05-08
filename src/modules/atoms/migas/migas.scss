@@ -1,0 +1,55 @@
+@import "../../../_scss/variables/variables";
+.pf-breadcrumb {
+  font-family: "Open Sans";
+
+  .breadcrumb {
+    background-color: white;
+    gap: 20px;
+    .breadcrumb-item {
+      > a {
+        font-weight: $pf-semibold;
+        color: $pf-color-terciary;
+        font-size: 1.5rem;
+      }
+
+      display: flex;
+      align-items: center;
+
+      &::before {
+        margin-right: 10px;
+        content: "";
+        background-image: url("../../../Img/icons/chevron-right.svg");
+        width: 15px;
+        height: 15px;
+        background-size: 100% 100%;
+      }
+
+      &:first-child {
+        &::before {
+          content: "";
+          background-image: none;
+        }
+      }
+
+      &:last-child {
+        > a {
+          font-weight: bold;
+          color: $pf-color-secondary;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .breadcrumb {
+      gap: 10px;
+
+      .breadcrumb-item {
+
+        &::before{
+            margin-right: 0;
+        }
+      }
+    }
+  }
+}
