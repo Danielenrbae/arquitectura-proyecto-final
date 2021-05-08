@@ -1,0 +1,73 @@
+@import "../../../_scss/variables/variables";
+.pf-form-contac {
+  width: 100%;
+  background-color: white;
+  font-family: "Open Sans";
+
+  .pf-form-contac__submit {
+    font-size: 1.8rem;
+    color: #f2f2f2;
+    font-weight: bold;
+    background-color: $pf-color-terciary;
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $pf-color-primary;
+    }
+
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+    > label {
+      font-size: 1.5rem;
+      color: $pf-color-terciary;
+      font-weight: $pf-semibold;
+    }
+
+    > input {
+      background-color: #f5f5f5;
+      border: none;
+      min-height: 40px;
+      font-size: 1.3rem;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    > textarea {
+      background-color: #f5f5f5;
+      border: none;
+      min-height: 40px;
+      font-size: 1.3rem;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    > span {
+      align-self: flex-end;
+      color: #979797;
+      font-size: 1.2rem;
+    }
+
+    .form-check {
+      .form-check-label {
+        color: $pf-color-terciary;
+        margin-left: 10px;
+        margin-top: 1.18px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

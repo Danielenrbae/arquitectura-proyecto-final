@@ -1,0 +1,50 @@
+.pf-form-contac {
+  width: 100%;
+  background-color: white;
+  font-family: "Open Sans"; }
+  .pf-form-contac .pf-form-contac__submit {
+    font-size: 1.8rem;
+    color: #f2f2f2;
+    font-weight: bold;
+    background-color: #24BFA3;
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 8px;
+    cursor: pointer;
+    margin: 0 auto; }
+    .pf-form-contac .pf-form-contac__submit:hover {
+      background-color: #2E5056; }
+  .pf-form-contac .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px; }
+    .pf-form-contac .form-group > label {
+      font-size: 1.5rem;
+      color: #24BFA3;
+      font-weight: 600; }
+    .pf-form-contac .form-group > input {
+      background-color: #f5f5f5;
+      border: none;
+      min-height: 40px;
+      font-size: 1.3rem; }
+      .pf-form-contac .form-group > input:focus {
+        box-shadow: none; }
+    .pf-form-contac .form-group > textarea {
+      background-color: #f5f5f5;
+      border: none;
+      min-height: 40px;
+      font-size: 1.3rem; }
+      .pf-form-contac .form-group > textarea:focus {
+        box-shadow: none; }
+    .pf-form-contac .form-group > span {
+      align-self: flex-end;
+      color: #979797;
+      font-size: 1.2rem; }
+    .pf-form-contac .form-group .form-check .form-check-label {
+      color: #24BFA3;
+      margin-left: 10px;
+      margin-top: 1.18px;
+      font-size: 1.1rem; }
