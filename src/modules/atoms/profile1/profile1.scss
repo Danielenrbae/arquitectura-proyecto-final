@@ -1,0 +1,134 @@
+@import "../../../_scss/variables/variables";
+
+.pf-profile1 {
+  width: 100%;
+  background-color: white;
+  font-family: "Open Sans";
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  .pf-profile1__title {
+    color: $pf-color-terciary;
+    font-weight: $pf-semibold;
+    font-size: 1.5rem;
+  }
+
+  .pf-profile1__subtitle {
+    font-size: 3.5rem;
+    color: $pf-color-primary;
+    font-weight: $pf-semibold;
+  }
+
+  .pf-profile1__container {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+
+    @media screen and (max-width: 767px) {
+      gap: 50px;
+      flex-direction: column;
+    }
+
+    .pf-container__img {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      > img {
+        max-width: 277px;
+        min-height: 277px;
+        margin-bottom: 15px;
+      }
+
+      > div {
+        input[type="file"] {
+          cursor: pointer;
+
+          opacity: 1;
+          z-index: 10;
+        }
+      }
+    }
+
+    .pf-container__data {
+      width: 100%;
+      padding-right: 200px;
+      flex: 4;
+
+      @media screen and (max-width: 1024px) {
+        padding-right: 100px;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 0px 10px;
+      }
+      .pf-data__title {
+        font-size: 2rem;
+        color: $pf-color-primary;
+        font-weight: $pf-semibold;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          width: 100%;
+          content: "";
+          height: 1px;
+          background-color: $pf-color-gray;
+          bottom: -10px;
+          left: 0;
+        }
+      }
+
+      .pf-data__form {
+        .form-row {
+          justify-content: flex-end;
+
+          @media screen and (max-width: 767px) {
+                justify-content: center;
+          }
+        }
+
+        .form-group {
+          > label {
+            font-size: 1.5rem;
+            color: $pf-color-terciary;
+            font-weight: $pf-semibold;
+          }
+
+          > input {
+            border: none;
+            background-color: $pf-color-light-gray;
+            font-size: 1.3rem;
+            padding: 8px;
+            min-height: 40px;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+        .pf-form__submit {
+          color: #f2f2f2;
+          background-color: $pf-color-terciary;
+          font-size: 1.5rem;
+          font-weight: $pf-semibold;
+          border: none;
+          outline: none;
+          padding: 8px 15px;
+          margin-top: 30px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $pf-color-primary;
+          }
+        }
+      }
+    }
+  }
+}
