@@ -7,6 +7,9 @@
 
 
 
+$(".pf-modal-sign-up__close").on("click", function () {
+    $(".pf-modal-sign-up").css("display", "none");
+});
 $(".pf-container__desplegable").on("click", function () {
   $(".pf-nav__desplegable").toggleClass("show");
 });
