@@ -1,0 +1,123 @@
+.pf-footer-bussiness {
+  text-align: center;
+  font-family: "Open Sans";
+  width: 100%;
+  padding: 20px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../../Img/common/pf-fondo-footer.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x; }
+  .pf-footer-bussiness .pf-footer-bussiness__nav {
+    width: 100%;
+    min-height: 65px;
+    position: relative;
+    padding-left: 90px;
+    padding-right: 30px;
+    gap: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .pf-footer-bussiness .pf-footer-bussiness__nav .pf-nav__logo {
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 90px;
+      cursor: pointer; }
+    .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 20px; }
+      .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu .pf-menu__item {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu .pf-menu__item > a {
+          width: 100%;
+          padding: 5px 20px;
+          color: #f2f2f2;
+          font-weight: 600;
+          text-decoration: none;
+          position: relative;
+          font-size: 1.5rem;
+          font-weight: 600; }
+          .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu .pf-menu__item > a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: #f2f2f2;
+            z-index: 9999;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out; }
+          .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu .pf-menu__item > a:hover {
+            font-weight: bold; }
+            .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu .pf-menu__item > a:hover::after {
+              transform: scale(1); }
+    .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__snetworks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; }
+      .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__snetworks img {
+        width: 25px;
+        height: 25px; }
+  .pf-footer-bussiness .pf-footer-bussiness__policy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f2f2f2;
+    padding: 20px 30px; }
+    .pf-footer-bussiness .pf-footer-bussiness__policy > div {
+      font-size: 1rem;
+      font-weight: 300; }
+    .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__list {
+      text-align: center;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__list .pf-list__item {
+        font-size: 1.5rem;
+        font-weight: 600; }
+        .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__list .pf-list__item > a {
+          color: #f2f2f2; }
+    .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__idioms {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      gap: 30px; }
+      .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__idioms .pf-idioms__item {
+        font-size: 1.5rem;
+        font-weight: 600; }
+        .pf-footer-bussiness .pf-footer-bussiness__policy .pf-policy__idioms .pf-idioms__item > a {
+          color: #f2f2f2; }
+  @media screen and (max-width: 800px) {
+    .pf-footer-bussiness .pf-footer-bussiness__policy {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px; }
+    .pf-footer-bussiness .pf-footer-bussiness__nav {
+      gap: 50px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 30px; }
+      .pf-footer-bussiness .pf-footer-bussiness__nav .pf-nav__logo {
+        display: none; }
+      .pf-footer-bussiness .pf-footer-bussiness__nav .pf-container__menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; } }

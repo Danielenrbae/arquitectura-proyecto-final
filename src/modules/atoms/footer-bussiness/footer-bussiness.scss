@@ -1,11 +1,10 @@
 @import "../../../_scss/variables/variables";
 
-.pf-footer {
+.pf-footer-bussiness {
   text-align: center;
   font-family: "Open Sans";
   width: 100%;
-  padding-top: 30px; 
-  padding: 30px 15px 0px 15px;
+  padding: 20px 15px 0px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,30 +14,8 @@
   background-size: cover;
   background-repeat: repeat-x;
 
-  .pf-footer__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    .pf-container__title {
-      font-weight: $pf-semibold;
-      font-size: 1.8rem;
-      color: $pf-color-terciary;
-    }
-
-    .pf-container__subtitle {
-      font-weight: bold;
-      color: #f2f2f2;
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-  }
-
-  .pf-footer__nav {
-    margin-top: 20px;
+  .pf-footer-bussiness__nav {
     width: 100%;
     min-height: 65px;
     position: relative;
@@ -116,7 +93,7 @@
     }
   }
 
-  .pf-footer__policy {
+  .pf-footer-bussiness__policy {
     width: 100%;
     display: flex;
     align-items: center;
@@ -165,18 +142,17 @@
   }
 
   @media screen and (max-width: 800px) {
-    .pf-footer__nav {
-      gap: 50px;
-    }
+    
 
-    .pf-footer__policy {
+    .pf-footer-bussiness__policy {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 15px;
     }
 
-    .pf-footer__nav {
+    .pf-footer-bussiness__nav {
+        gap: 50px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
