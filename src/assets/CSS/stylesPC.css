@@ -690,6 +690,87 @@
     justify-content: center;
   }
 }
+.pf-info2 {
+  width: 100%;
+  background-color: white;
+  font-family: "Open Sans";
+}
+
+.pf-info2 .pf-info2__title {
+  font-size: 1.5rem;
+  color: #24BFA3;
+  font-weight: 600;
+}
+
+.pf-info2 .pf-info2__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.pf-info2 .pf-info2__subtitle .pf-subtitle__text {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #2E5056;
+}
+
+.pf-info2 .pf-info2__subtitle > a {
+  font-size: 1.5rem;
+  color: #24BFA3;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.pf-info2 .pf-info2__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 30px;
+}
+
+.pf-info2 .pf-info2__container .pf-container__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-info2 .pf-info2__container .pf-container__item a {
+  text-decoration: none;
+}
+
+.pf-info2 .pf-info2__container .pf-container__item a img {
+  max-width: 180px;
+}
+
+.pf-info2 .pf-info2__container .pf-container__item a .pf-item__text {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #2E5056;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .pf-info2 .pf-info2__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+}
 .pf-info1 {
   text-align: center;
   width: 100%;
@@ -838,85 +919,56 @@
   filter: grayscale(100%);
   opacity: 0.5;
 }
-.pf-info2 {
-  width: 100%;
-  background-color: white;
+.pf-breadcrumb {
   font-family: "Open Sans";
 }
 
-.pf-info2 .pf-info2__title {
-  font-size: 1.5rem;
-  color: #24BFA3;
-  font-weight: 600;
+.pf-breadcrumb .breadcrumb {
+  background-color: white;
+  gap: 20px;
 }
 
-.pf-info2 .pf-info2__subtitle {
+.pf-breadcrumb .breadcrumb .breadcrumb-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
-.pf-info2 .pf-info2__subtitle .pf-subtitle__text {
-  font-size: 3.5rem;
+.pf-breadcrumb .breadcrumb .breadcrumb-item > a {
   font-weight: 600;
-  color: #2E5056;
-}
-
-.pf-info2 .pf-info2__subtitle > a {
-  font-size: 1.5rem;
   color: #24BFA3;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.pf-info2 .pf-info2__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  margin-top: 30px;
-}
-
-.pf-info2 .pf-info2__container .pf-container__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.pf-info2 .pf-info2__container .pf-container__item a {
-  text-decoration: none;
-}
-
-.pf-info2 .pf-info2__container .pf-container__item a img {
-  max-width: 180px;
-}
-
-.pf-info2 .pf-info2__container .pf-container__item a .pf-item__text {
-  text-decoration: none;
   font-size: 1.5rem;
-  color: #2E5056;
-  font-weight: 600;
+}
+
+.pf-breadcrumb .breadcrumb .breadcrumb-item::before {
+  margin-right: 10px;
+  content: "";
+  background-image: url("../Img/icons/chevron-right.svg");
+  width: 15px;
+  height: 15px;
+  background-size: 100% 100%;
+}
+
+.pf-breadcrumb .breadcrumb .breadcrumb-item:first-child::before {
+  content: "";
+  background-image: none;
+}
+
+.pf-breadcrumb .breadcrumb .breadcrumb-item:last-child > a {
+  font-weight: bold;
+  color: #011F26;
 }
 
 @media screen and (max-width: 767px) {
-  .pf-info2 .pf-info2__container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+  .pf-breadcrumb .breadcrumb {
+    gap: 10px;
+  }
+
+  .pf-breadcrumb .breadcrumb .breadcrumb-item::before {
+    margin-right: 0;
   }
 }
 .pf-info4 {
@@ -1061,57 +1113,170 @@
     background-position: top;
   }
 }
-.pf-breadcrumb {
+
+.pf-modal-sign-up {
+  background-color: rgba(164, 226, 219, 0.25);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  text-align: center;
   font-family: "Open Sans";
 }
 
-.pf-breadcrumb .breadcrumb {
-  background-color: white;
-  gap: 20px;
+@media (min-width: 576px) {
+  .pf-modal-sign-up .modal-dialog {
+    max-width: 600px;
+  }
 }
 
-.pf-breadcrumb .breadcrumb .breadcrumb-item {
+.pf-modal-sign-up .modal-dialog .modal-content {
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px 6px #D4D4D4;
+  box-shadow: 0 3px 6px #D4D4D4;
+  border: none;
+  background-color: white;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .pf-modal-sign-up__close {
+  content: "";
+  background-image: url("../Img/icons/icon-close-gray.svg");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 0px;
 }
 
-.pf-breadcrumb .breadcrumb .breadcrumb-item > a {
-  font-weight: 600;
-  color: #24BFA3;
-  font-size: 1.5rem;
-}
-
-.pf-breadcrumb .breadcrumb .breadcrumb-item::before {
-  margin-right: 10px;
-  content: "";
-  background-image: url("../Img/icons/chevron-right.svg");
-  width: 15px;
-  height: 15px;
-  background-size: 100% 100%;
-}
-
-.pf-breadcrumb .breadcrumb .breadcrumb-item:first-child::before {
-  content: "";
-  background-image: none;
-}
-
-.pf-breadcrumb .breadcrumb .breadcrumb-item:last-child > a {
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__title {
+  color: #2E5056;
   font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group .pf-form__select {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: #011F26;
 }
 
-@media screen and (max-width: 767px) {
-  .pf-breadcrumb .breadcrumb {
-    gap: 10px;
-  }
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group > .form-control {
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #F5F5F5;
+}
 
-  .pf-breadcrumb .breadcrumb .breadcrumb-item::before {
-    margin-right: 0;
-  }
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group > .form-control:focus {
+  border: none;
+  border-bottom: 1.5px solid #D4D4D4;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form .pf-form__submit {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  background-color: #24BFA3;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  padding: 10px;
+  width: 280px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form .pf-form__submit:hover {
+  background-color: #2E5056;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login > span {
+  color: #D4D4D4;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login > a {
+  color: #24BFA3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login p {
+  font-size: 1rem;
+  color: #979797;
+}
+
+.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login p > a {
+  font-size: 1rem;
+  color: #24BFA3;
+  font-weight: 600;
 }
 .pf-modal-sign-in {
   background-color: rgba(164, 226, 219, 0.25);
@@ -1275,170 +1440,6 @@
 .pf-modal-sign-in .modal-dialog .modal-content .modal-body .pf-modal-sign-in__login > a {
   color: #24BFA3;
   font-size: 1.2rem;
-  font-weight: 600;
-}
-.pf-modal-sign-up {
-  background-color: rgba(164, 226, 219, 0.25);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  text-align: center;
-  font-family: "Open Sans";
-}
-
-@media (min-width: 576px) {
-  .pf-modal-sign-up .modal-dialog {
-    max-width: 600px;
-  }
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content {
-  position: relative;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 3px 6px #D4D4D4;
-  box-shadow: 0 3px 6px #D4D4D4;
-  border: none;
-  background-color: white;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .pf-modal-sign-up__close {
-  content: "";
-  background-image: url("../Img/icons/icon-close-gray.svg");
-  background-size: 100% 100%;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 50px 0px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__title {
-  color: #2E5056;
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form {
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group {
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group .pf-form__select {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  color: #011F26;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group > .form-control {
-  font-size: 1.5rem;
-  border: none;
-  border-bottom: 1px solid #F5F5F5;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form > .form-group > .form-control:focus {
-  border: none;
-  border-bottom: 1.5px solid #D4D4D4;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form .pf-form__submit {
-  color: #f2f2f2;
-  font-size: 1.8rem;
-  background-color: #24BFA3;
-  border: none;
-  outline: none;
-  border-radius: 35px;
-  padding: 10px;
-  width: 280px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__form .pf-form__submit:hover {
-  background-color: #2E5056;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login > span {
-  color: #D4D4D4;
-  font-size: 1.2rem;
-  margin-bottom: 4px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login > a {
-  color: #24BFA3;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login p {
-  font-size: 1rem;
-  color: #979797;
-}
-
-.pf-modal-sign-up .modal-dialog .modal-content .modal-body .pf-modal-sign-up__login p > a {
-  font-size: 1rem;
-  color: #24BFA3;
   font-weight: 600;
 }
 .pf-nav {
