@@ -690,6 +690,95 @@
     justify-content: center;
   }
 }
+.pf-info1 {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  font-family: 'Open Sans';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pf-info1 .pf-info1__title {
+  color: #24BFA3;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pf-info1 .pf-info1__subtitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #2E5056;
+}
+
+.pf-info1 .pf-info1__container {
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pf-info1 .pf-info1__container .pf-container__card {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pf-info1 .pf-info1__container .pf-container__card img {
+  max-width: 170px;
+  max-height: 155px;
+}
+
+.pf-info1 .pf-info1__container .pf-container__card .pf-card__text {
+  color: #2E5056;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pf-info1 .pf-info1__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pf-info1 .pf-info1__container .pf-container__card {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
 .pf-info2 {
   width: 100%;
   background-color: white;
