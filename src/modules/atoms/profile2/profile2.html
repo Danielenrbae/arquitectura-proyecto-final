@@ -1,0 +1,84 @@
+<section class="pf-profile1">
+
+    <h2 class="pf-profile1__title">ACTUALIZA</h2>
+    <h3 class="pf-profile1__subtitle">Tu Perfil</h3>
+
+    <div class="pf-profile1__container">
+        <div class="pf-container__img">
+            <img src="../../../assets/Img/dynamic/bussines (2).jpeg" alt="Imagen perfil">
+            <div>
+                <input type="file" name="perfil"/>
+            </div>
+        </div>
+
+        <div class="pf-container__data">
+            <h3 class="pf-data__title">Datos Personales</h3>
+
+            <form class="pf-data__form">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="nombre">NOMBRE EMPRESA</label>
+                        <input type="text" class="form-control" name="nombre" value="MC Donald's">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-12 col-lg-6">
+                        <label for="email">CORREO ELECTRÓNICO</label>
+                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group col-sm-12 col-lg-6">
+                        <label for="tel">TELÉFONO</label>
+                        <input type="tel" class="form-control" name="tel">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-12 col-lg-4">
+                        <label for="localidad">LOCALIDAD</label>
+                        <input type="text" class="form-control" name="localidad" aria-describedby="localidad">
+                    </div>
+
+                    <div class="form-group col-sm-12 col-lg-8">
+                        <label for="direccion">DIRECCIÓN</label>
+                        <input type="text" class="form-control" name="direccion">
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col">
+                        <label for="direccion">DESCRIPCIÓN</label>
+                        <textarea class="col" name="descripcion"></textarea>
+                    </div>
+                    
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="pass_actual">CONTRASEÑA ACTUAL</label>
+                        <input type="password" class="form-control" name="pass_actual">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="pass_new">NUEVA CONTRASEÑA</label>
+                        <input type="password" class="form-control" name="pass_new">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="conf_new_pass">REPITE LA NUEVA CONTRASEÑA</label>
+                        <input type="password" class="form-control" name="conf_new_pass">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <input class="pf-form__submit" type="submit" value="Guardar cambios">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>

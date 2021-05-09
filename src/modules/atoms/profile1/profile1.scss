@@ -112,6 +112,15 @@
               box-shadow: none;
             }
           }
+
+          > textarea{
+            background-color: $pf-color-light-gray;
+            font-size: 1.3rem;
+            padding: 8px;
+            min-height: 40px;
+            border: none;
+            outline: none;
+          }
         }
         .pf-form__submit {
           color: #f2f2f2;
