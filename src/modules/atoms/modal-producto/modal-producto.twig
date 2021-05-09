@@ -1,0 +1,62 @@
+<!-- Modal -->
+<div
+  class="modal pf-modal-producto"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  style="display: block"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="pf-modal-producto__close"></span>
+      <div class="modal-body">
+        <h2 class="pf-modal-producto__title">Datos del Producto</h2>
+
+        <form class="pf-modal-producto__principal">
+
+            <div class="pf-principal__principal row">
+                <div class="pf-principal__img">
+                    <img src="../../../assets/Img/common/pf-default-image.png" alt="Icono default">
+                    <input type="file" name="imgproducto">
+                </div>
+                <div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">NOMBRE DEL PRODUCTO</label>
+                            <input type="text" class="form-control" name="nombre" aria-describedby="passwordhelp" placeholder="Contraseña" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select class="form-control pf-form__select" name="user" placeholder="Seleccione un tipo de usuario" title="Seleccione un tipo de usuario" required>
+                             <option selected>Seleccione una categoria</option>
+                              <option>Mexicana</option>
+                              <option>Italiana</option>
+                              <option>China</option>
+                              <option>Japonesa </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="precio">PRECIO</label>
+                            <input type="number" class="form-control" name="precio">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pf-principal__second row">
+                <div class="form-group">
+                    <label for="descripcion">DESCRIPCION</label>
+                    <textarea name="descripcion"></textarea>
+                    <small>Máximo 500 caracteres</small>
+                </div>
+                
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

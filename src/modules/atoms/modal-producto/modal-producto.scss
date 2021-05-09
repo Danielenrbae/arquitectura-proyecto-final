@@ -1,0 +1,86 @@
+@import "../../../_scss/variables/variables";
+
+@import "../../../_scss/variables/variables";
+.pf-modal-producto {
+  background-color: rgba(164, 226, 219, 0.25);
+  backdrop-filter: blur(14px);
+  font-family: "Open Sans";
+
+  .modal-dialog {
+    @media (min-width: 576px) {
+      max-width: 800px;
+    }
+    .modal-content {
+      position: relative;
+      border-radius: 15px;
+      box-shadow: 0 3px 6px $pf-color-gray;
+      border: none;
+      background-color: white;
+
+      .pf-modal-producto__close {
+        content: "";
+        background-image: url("../../../Img/icons/icon-close-gray.svg");
+        background-size: 100% 100%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0px;
+        padding: 50px;
+
+        .pf-modal-producto__title {
+          color: $pf-color-primary;
+          width: 100%;
+          font-weight: bold;
+          font-size: 2.5rem;
+          margin-bottom: 50px;
+          align-self: flex-start;
+          position: relative;
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $pf-color-gray;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+          }
+        }
+
+        .pf-modal-producto__principal {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .pf-principal__principal {
+            width: 100%;
+            .pf-principal__img{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                img{
+                    width:250px;
+                    height: 200px;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
