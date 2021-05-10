@@ -38,15 +38,15 @@
     
 
 <!-- Modal -->
-<div
-  class="modal pf-modal-producto"
+<div 
+  class="modal pf-modal-producto "
   id="exampleModal"
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
   aria-hidden="true"
   style="display: block"
 >
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <span class="pf-modal-producto__close"></span>
       <div class="modal-body">
@@ -59,16 +59,17 @@
                     <img src="../../../assets/Img/common/pf-default-image.png" alt="Icono default">
                     <input type="file" name="imgproducto">
                 </div>
-                <div>
+                <div class="pf-principal__data">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nombre">NOMBRE DEL PRODUCTO</label>
-                            <input type="text" class="form-control" name="nombre" aria-describedby="passwordhelp" placeholder="Contraseña" required>
+                            <input type="text" class="form-control" name="nombre" placeholder="Nombre del producto" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <select class="form-control pf-form__select" name="user" placeholder="Seleccione un tipo de usuario" title="Seleccione un tipo de usuario" required>
+                            <label for="categoria">CATEGORIA</label>
+                            <select class="form-control pf-form__select" name="categoria" placeholder="Seleccione un tipo de usuario" title="Seleccione un tipo de usuario" required>
                              <option selected>Seleccione una categoria</option>
                               <option>Mexicana</option>
                               <option>Italiana</option>
@@ -80,7 +81,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="precio">PRECIO</label>
-                            <input type="number" class="form-control" name="precio">
+                            <input type="number" class="form-control" name="precio" placeholder="Precio">
                         </div>
                     </div>
                 </div>
@@ -95,6 +96,92 @@
                 
             </div>
         </form>
+
+        <h2 class="pf-modal-producto__title">Información Nutricional</h2>
+
+        <div class="pf-modal-producto__second">
+
+             <form class="pf-second__form">
+
+                <div class="pf-form__energy">
+                    <input type="text" name="energia">
+                    <label for="energia">Energía</label>
+                </div>
+
+                <div class="pf-form__datos">
+                    <ul>
+                        <li>
+                            <div class="form-group">
+                                <label for="peso">Peso(g)</label>
+                                <input type="text" name="peso">
+                            </div>
+                        </li>
+                        <li>   
+                            <div class="form-group">
+                                <label for="fibra">Fibra(g)</label>
+                                <input type="text" name="fibra">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="v-energeticokj">Valor Energético(kJ)</label>
+                                <input type="text" name="v-energeticokj">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="azucares">Azúcares(g)</label>
+                                <input type="text" name="azucares">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="v-energeticokc">Valor Energético(kcal)</label>
+                                <input type="text" name="v-energeticokc">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="grasas">Grasas(g)</label>
+                                <input type="text" name="grasas">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="proteinas">Proteínas(g)</label>
+                                <input type="text" name="proteinas">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="ac-saturados">Ác. Grasos Saturados(g)</label>
+                                <input type="text" name="ac-saturados">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="h-carbono">Hidratos de Carbono(g)</label>
+                                <input type="text" name="h-carbono">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <label for="sal">Sal(g)</label>
+                                <input type="text" name="Sal">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="">
+                    <input type="submit" value="Insertar producto">
+                </div>
+             </form>
+
+            
+        </div>
       </div>
     </div>
   </div>
