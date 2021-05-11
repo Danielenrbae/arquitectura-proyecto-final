@@ -1,0 +1,128 @@
+
+<section class="pf-pedidos">
+
+    <h2 class="pf-pedidos__title">Pedidos más recientes</h2>
+
+
+    {% if ok %}
+
+    <div class="pf-pedidos__container">
+        <span>Ver todos los pedidos</span>
+        <div class="pf-container__item">
+            <div class="pf-item__data">
+                <div class="pf-data__row"> 
+                    <span> IDENTIFICADOR:</span>
+                    <p>0001</p>
+                </div>
+
+                <div class="pf-data__row">  
+                    <span> EMPRESA REALIZADA:</span>
+                    <p>McDonald's</p>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> DIRECCIÓN:</span>
+                    <p>Calle Batalla Del Callao Nº2 BAJO A</p>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> FECHA:</span>
+                    <p>30/04/2021</p>
+                </div>
+
+                <div class="pf-data__row state"> 
+                    <span> ESTADO</span>
+                    <img src="../../../assets/Img/icons/icon-check.svg" width="25"/>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> PRODUCTOS</span>
+                   <div class="pf-row__productos">
+                       <div>
+                           <p>Mc Grand Extreme 1995</p>
+                           <span>10.00 EUROS</span>
+                       </div>
+                       <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                    <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                    <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="pf-item__importe">
+                 <span>IMPORTE TOTAL</span>
+                 <span>40.00 EUROS</span>
+            </div >
+        </div>
+        <div class="pf-container__item">
+            <div class="pf-item__data">
+                <div class="pf-data__row"> 
+                    <span> IDENTIFICADOR:</span>
+                    <p>0001</p>
+                </div>
+
+                <div class="pf-data__row">  
+                    <span> EMPRESA REALIZADA:</span>
+                    <p>McDonald's</p>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> DIRECCIÓN:</span>
+                    <p>Calle Batalla Del Callao Nº2 BAJO A</p>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> FECHA:</span>
+                    <p>30/04/2021</p>
+                </div>
+
+                <div class="pf-data__row state"> 
+                    <span> ESTADO</span>
+                    <img src="../../../assets/Img/icons/icon-check.svg" width="25"/>
+                </div>
+
+                <div class="pf-data__row"> 
+                    <span> PRODUCTOS</span>
+                   <div class="pf-row__productos">
+                       <div>
+                           <p>Mc Grand Extreme 1995</p>
+                           <span>10.00 EUROS</span>
+                       </div>
+                       <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                    <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                    <div>
+                        <p>Mc Grand Extreme 1995</p>
+                        <span>10.00 EUROS</span>
+                    </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="pf-item__importe">
+                 <span>IMPORTE TOTAL</span>
+                 <span>40.00 EUROS</span>
+            </div >
+        </div>
+    </div>
+        
+    {% else %}
+        <div class="pf-pedidos__container--empty">
+            <p>Todavía no has hecho ningún pedido</p>
+        </div>
+    {% endif %}
+</section>
