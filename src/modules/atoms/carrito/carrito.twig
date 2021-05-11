@@ -1,0 +1,33 @@
+
+<section class="pf-carrito">
+
+
+    <h2 class="pf-carrito__title">Carrito</h2>
+
+    {% if log %}
+        {% if content %}
+            <div class="pf-carrito__container">
+                <div class="pf-container__productos">
+                    
+                </div>
+
+                <div class="pf-container__total">
+
+                </div>
+            </div>
+        {% else %}
+
+          <div class="pf-carrito__container--nocontent">
+            <p>Actualmente el carrito se encuentra vacío.</p>
+            <a href="#">¡Añade ya un producto!</a>
+          </div>
+
+        {% endif %}
+    {% else %}
+        <div class="pf-carrito__container--nocontent">
+            <p>Primero debes iniciar sesión para poder utilizar el carrito</p>
+            <a href="#">Volver al inicio</a>
+        </div>
+    {% endif %}
+
+</section> 

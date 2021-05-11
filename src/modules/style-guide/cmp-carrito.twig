@@ -1,0 +1,12 @@
+{% extends "../../templates/template.twig" %}
+
+
+{% block page %}
+
+{% include '../../modules/atoms/carrito/carrito.twig' with {
+    log: true,
+    content: true
+} %}
+
+
+{% endblock %} 
