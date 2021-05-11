@@ -1,0 +1,81 @@
+@import "../../../_scss/variables/variables";
+.delete {
+  font-family: "Open Sans";
+  p {
+    font-size: 1.4rem;
+  }
+
+  .close__delete{
+    z-index:99999;  
+  } 
+
+  .pf-modal-delete__confirm {
+    margin-top: 30px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    .pf-confirm__title {
+      font-size: 1.8rem;
+      color: #979797;
+      font-weight: $pf-semibold;
+    }
+
+    .pf-confirm__buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $pf-color-terciary;
+        font-size: 1.5rem;
+        background-color: #f2f2f2;
+        border: 1px solid $pf-color-light-gray;
+        outline: none;
+        border-radius: 35px;
+        padding: 7px;
+        width: 200px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $pf-color-primary;
+          color: #f2f2f2;
+         
+        }
+      }
+
+      .pf-button__confirm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f2f2f2;
+        font-size: 1.5rem;
+        background-color: $pf-color-terciary;
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        padding: 7px;
+        width: 200px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $pf-color-primary;
+        }
+      }
+    }
+  }
+}

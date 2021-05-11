@@ -1,0 +1,59 @@
+.delete {
+  font-family: "Open Sans"; }
+  .delete p {
+    font-size: 1.4rem; }
+  .delete .close__delete {
+    z-index: 99999; }
+  .delete .pf-modal-delete__confirm {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; }
+    .delete .pf-modal-delete__confirm .pf-confirm__title {
+      font-size: 1.8rem;
+      color: #979797;
+      font-weight: 600; }
+    .delete .pf-modal-delete__confirm .pf-confirm__buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .delete .pf-modal-delete__confirm .pf-confirm__buttons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #24BFA3;
+        font-size: 1.5rem;
+        background-color: #f2f2f2;
+        border: 1px solid #F5F5F5;
+        outline: none;
+        border-radius: 35px;
+        padding: 7px;
+        width: 200px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none; }
+        .delete .pf-modal-delete__confirm .pf-confirm__buttons a:hover {
+          background-color: #2E5056;
+          color: #f2f2f2; }
+      .delete .pf-modal-delete__confirm .pf-confirm__buttons .pf-button__confirm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f2f2f2;
+        font-size: 1.5rem;
+        background-color: #24BFA3;
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        padding: 7px;
+        width: 200px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none; }
+        .delete .pf-modal-delete__confirm .pf-confirm__buttons .pf-button__confirm:hover {
+          background-color: #2E5056; }
