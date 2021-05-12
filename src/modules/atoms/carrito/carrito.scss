@@ -4,10 +4,138 @@
   width: 100%;
   font-family: "Open Sans";
   padding: 0px 100px;
+
   .pf-carrito__title {
     font-size: 3.5rem;
     font-weight: $pf-semibold;
     color: $pf-color-primary;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $pf-color-gray;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+
+  .pf-carrito__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+
+    .pf-container__productos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex: 2.5;
+
+      .pf-productos__item {
+        width: 100%;
+        background-color: $pf-color-light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 24px;
+        gap: 50px;
+
+        .pf-item__data {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 5px;
+
+          > p {
+            color: $pf-color-secondary;
+            font-size: 1.5rem;
+          }
+        }
+        > img {
+          width: 150px;
+        }
+
+        > a {
+          margin-left: auto;
+          margin-right: 70px;
+          font-weight: bold;
+          color: $pf-color-terciary;
+          font-size: 1.8rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .pf-container__total {
+      align-self: flex-start;
+      position: sticky;
+      width: 100%;
+      height: 100%;
+      background-color: $pf-color-light-gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex: 1;
+      padding: 50px 30px;
+
+      .pf-total__title {
+        color: $pf-color-primary;
+        font-weight: $pf-semibold;
+        font-size: 2.5rem;
+      }
+
+      .pf-total__valor {
+        color: $pf-color-primary;
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+
+      .pf-total__promocional {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 100%;
+
+        label {
+          font-weight: $pf-semibold;
+          color: $pf-color-terciary;
+          font-size: 1.4rem;
+          display: block;
+        }
+
+        input[type="text"] {
+      
+          
+          color: $pf-color-secondary;
+          font-size: 1.7rem;
+          border: none;
+          outline: none;
+          
+        }
+
+        input[type="submit"] {
+          color: #f2f2f2;
+          font-weight: $pf-semibold;
+          height: auto;
+          float: right;
+          background-color: $pf-color-terciary;
+          font-size: 1.8rem;
+          border: none;
+          outline: none;
+        }
+
+      }
+    }
   }
 
   .pf-carrito__container--nocontent {

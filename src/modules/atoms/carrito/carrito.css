@@ -5,7 +5,101 @@
   .pf-carrito .pf-carrito__title {
     font-size: 3.5rem;
     font-weight: 600;
-    color: #2E5056; }
+    color: #2E5056;
+    position: relative; }
+    .pf-carrito .pf-carrito__title::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #D4D4D4;
+      position: absolute;
+      bottom: -10px;
+      left: 0; }
+  .pf-carrito .pf-carrito__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px; }
+    .pf-carrito .pf-carrito__container .pf-container__productos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex: 2.5; }
+      .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item {
+        width: 100%;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 24px;
+        gap: 50px; }
+        .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item .pf-item__data {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 5px; }
+          .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item .pf-item__data > p {
+            color: #011F26;
+            font-size: 1.5rem; }
+        .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item > img {
+          width: 150px; }
+        .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item > a {
+          margin-left: auto;
+          margin-right: 70px;
+          font-weight: bold;
+          color: #24BFA3;
+          font-size: 1.8rem;
+          cursor: pointer; }
+    .pf-carrito .pf-carrito__container .pf-container__total {
+      align-self: flex-start;
+      position: sticky;
+      width: 100%;
+      height: 100%;
+      background-color: #F5F5F5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex: 1;
+      padding: 50px 30px; }
+      .pf-carrito .pf-carrito__container .pf-container__total .pf-total__title {
+        color: #2E5056;
+        font-weight: 600;
+        font-size: 2.5rem; }
+      .pf-carrito .pf-carrito__container .pf-container__total .pf-total__valor {
+        color: #2E5056;
+        font-weight: bold;
+        font-size: 2.5rem; }
+      .pf-carrito .pf-carrito__container .pf-container__total .pf-total__promocional {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 100%; }
+        .pf-carrito .pf-carrito__container .pf-container__total .pf-total__promocional label {
+          font-weight: 600;
+          color: #24BFA3;
+          font-size: 1.4rem;
+          display: block; }
+        .pf-carrito .pf-carrito__container .pf-container__total .pf-total__promocional input[type="text"] {
+          color: #011F26;
+          font-size: 1.7rem;
+          border: none;
+          outline: none; }
+        .pf-carrito .pf-carrito__container .pf-container__total .pf-total__promocional input[type="submit"] {
+          color: #f2f2f2;
+          font-weight: 600;
+          height: auto;
+          float: right;
+          background-color: #24BFA3;
+          font-size: 1.8rem;
+          border: none;
+          outline: none; }
   .pf-carrito .pf-carrito__container--nocontent {
     display: flex;
     flex-direction: column;

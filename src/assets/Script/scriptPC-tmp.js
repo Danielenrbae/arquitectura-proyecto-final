@@ -11,6 +11,11 @@
 
 
 
+$(".pf-modal-producto__close").on("click", function () {
+        $(this).parents().css("display" , "none");
+}); 
+
+
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
     $(this).parents().css("display" , "none");
@@ -36,9 +41,3 @@ $(".pf-container__desplegable").on("click", function () {
   
 
 
-
-
-
-$(".pf-modal-producto__close").on("click", function () {
-        $(this).parents().css("display" , "none");
-}); 
