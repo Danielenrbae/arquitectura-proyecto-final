@@ -5,6 +5,13 @@
   font-family: "Open Sans";
   padding: 0px 100px;
 
+  @media screen and (max-width: 1024px) {
+    padding: 0px 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   .pf-carrito__title {
     font-size: 3.5rem;
     font-weight: $pf-semibold;
@@ -30,6 +37,10 @@
     gap: 100px;
     margin-top: 50px;
 
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .pf-container__productos {
       width: 100%;
       display: flex;
@@ -47,6 +58,11 @@
         justify-content: flex-start;
         padding: 20px 24px;
         gap: 50px;
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          gap: 20px;
+        }
 
         .pf-item__data {
           display: flex;
@@ -71,6 +87,12 @@
           color: $pf-color-terciary;
           font-size: 1.8rem;
           cursor: pointer;
+
+          @media screen and (max-width: 767px) {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -114,13 +136,10 @@
         }
 
         input[type="text"] {
-      
-          
           color: $pf-color-secondary;
           font-size: 1.7rem;
           border: none;
           outline: none;
-          
         }
 
         input[type="submit"] {
@@ -133,7 +152,6 @@
           border: none;
           outline: none;
         }
-
       }
     }
   }

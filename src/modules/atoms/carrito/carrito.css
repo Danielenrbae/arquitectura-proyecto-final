@@ -2,6 +2,12 @@
   width: 100%;
   font-family: "Open Sans";
   padding: 0px 100px; }
+  @media screen and (max-width: 1024px) {
+    .pf-carrito {
+      padding: 0px 20px; } }
+  @media screen and (max-width: 767px) {
+    .pf-carrito {
+      text-align: center; } }
   .pf-carrito .pf-carrito__title {
     font-size: 3.5rem;
     font-weight: 600;
@@ -22,6 +28,9 @@
     justify-content: center;
     gap: 100px;
     margin-top: 50px; }
+    @media screen and (max-width: 1024px) {
+      .pf-carrito .pf-carrito__container {
+        flex-direction: column; } }
     .pf-carrito .pf-carrito__container .pf-container__productos {
       width: 100%;
       display: flex;
@@ -38,6 +47,10 @@
         justify-content: flex-start;
         padding: 20px 24px;
         gap: 50px; }
+        @media screen and (max-width: 767px) {
+          .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item {
+            flex-direction: column;
+            gap: 20px; } }
         .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item .pf-item__data {
           display: flex;
           flex-direction: column;
@@ -56,6 +69,11 @@
           color: #24BFA3;
           font-size: 1.8rem;
           cursor: pointer; }
+          @media screen and (max-width: 767px) {
+            .pf-carrito .pf-carrito__container .pf-container__productos .pf-productos__item > a {
+              margin-left: 0px;
+              margin-right: 0px;
+              margin: 0 auto; } }
     .pf-carrito .pf-carrito__container .pf-container__total {
       align-self: flex-start;
       position: sticky;

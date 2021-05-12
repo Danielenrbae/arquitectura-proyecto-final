@@ -19,13 +19,20 @@ $(".pf-modal-producto__close").on("click", function () {
 }); 
 
 
+$(".pf-modal-sign-up__close").on("click", function () {
+    $(this).parents().css("display" , "none");
+});
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
     $(this).parents().css("display" , "none");
 });
-$(".pf-modal-sign-up__close").on("click", function () {
-    $(this).parents().css("display" , "none");
-});
+$(".pf-container__desplegable").on("click", function () {
+    $(".pf-nav-bussiness__desplegable").toggleClass("show");
+  });
+  $(".pf-container__desplegable").on("click", function () {
+    $(".pf-nav-bussines__desplegable").toggleClass("show");
+  });
+  
 $(".pf-container__desplegable").on("click", function () {
   $(".pf-nav__desplegable").toggleClass("show");
 });
@@ -35,13 +42,7 @@ $(".pf-auth__icon").on("click", function () {
 });
 
 
-$(".pf-container__desplegable").on("click", function () {
-    $(".pf-nav-bussiness__desplegable").toggleClass("show");
-  });
-  $(".pf-container__desplegable").on("click", function () {
-    $(".pf-nav-bussines__desplegable").toggleClass("show");
-  });
-  
+
 
 
 
