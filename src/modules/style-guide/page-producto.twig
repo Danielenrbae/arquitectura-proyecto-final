@@ -1,0 +1,16 @@
+{% extends "../../templates/template.twig" %}
+
+
+{% block page %}
+
+{% include '../../modules/atoms/nav/nav.twig' with {
+    logeado: false
+}%}
+
+{% include "../../modules/atoms/product/product.twig" %}
+
+{% include "../../modules/atoms/carousel/carousel.twig" %}
+
+{% include "../../modules/atoms/footer/footer.twig" %}
+
+{% endblock %} 

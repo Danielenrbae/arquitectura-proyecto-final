@@ -1,6 +1,7 @@
 .pf-product {
   width: 100%;
   font-family: "Open Sans";
+  margin-bottom: 100px;
   padding: 50px 100px; }
   @media screen and (max-width: 1200px) {
     .pf-product {
