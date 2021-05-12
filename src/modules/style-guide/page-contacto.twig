@@ -1,0 +1,14 @@
+{% extends "../../templates/template.twig" %}
+
+
+{% block page %}
+
+{% include '../../modules/atoms/nav/nav.twig' with {
+    logeado: false
+}%}
+
+{% include "../../modules/atoms/form-contacto/form-contacto.twig" %}
+
+{% include "../../modules/atoms/footer/footer.twig" %}
+
+{% endblock %} 

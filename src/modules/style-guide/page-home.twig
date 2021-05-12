@@ -1,0 +1,17 @@
+{% extends "../../templates/template.twig" %}
+
+
+{% block page %}
+
+{% include '../../modules/atoms/nav/nav.twig' with {
+    logeado: false
+}%}
+
+{% include "../../modules/atoms/infografia1/infografia1.twig" %}
+{% include "../../modules/atoms/infografia2/infografia2.twig" %}
+{% include "../../modules/atoms/infografia3/infografia3.twig" %}
+{% include "../../modules/atoms/infografia4/infografia4.twig" %}
+
+{% include "../../modules/atoms/footer/footer.twig" %}
+
+{% endblock %} 

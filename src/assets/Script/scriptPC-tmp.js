@@ -1,4 +1,3 @@
-
 $(".pf-carousel__owl").owlCarousel({
   loop: true,
   margin: 50,
@@ -33,10 +32,10 @@ $(".pf-carousel__owl").owlCarousel({
 
 
 
+
 $(".pf-modal-producto__close").on("click", function () {
         $(this).parents().css("display" , "none");
 }); 
-
 
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
@@ -82,5 +81,6 @@ function comprobarCantidad(num) {
   if (num > 0 && num < 99) result = true;
   return result;
 }
+
 
 

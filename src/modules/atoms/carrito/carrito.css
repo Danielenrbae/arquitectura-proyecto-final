@@ -1,7 +1,9 @@
 .pf-carrito {
   width: 100%;
   font-family: "Open Sans";
-  padding: 0px 100px; }
+  padding: 0px 100px;
+  margin-top: 50px;
+  margin-bottom: 100px; }
   @media screen and (max-width: 1024px) {
     .pf-carrito {
       padding: 0px 20px; } }

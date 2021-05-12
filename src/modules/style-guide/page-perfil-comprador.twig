@@ -1,0 +1,15 @@
+{% extends "../../templates/template.twig" %}
+
+
+{% block page %}
+
+{% include '../../modules/atoms/nav/nav.twig' with {
+    logeado: true
+}%}
+
+{% include "../../modules/atoms/profile1/profile1.twig"  
+    %}
+
+{% include "../../modules/atoms/footer/footer.twig" %}
+
+{% endblock %} 

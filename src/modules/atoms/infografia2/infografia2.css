@@ -1,7 +1,10 @@
 .pf-info2 {
   width: 100%;
   background-color: white;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0px 100px; }
   .pf-info2 .pf-info2__title {
     font-size: 1.5rem;
     color: #24BFA3;
