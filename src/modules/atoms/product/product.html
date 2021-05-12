@@ -4,25 +4,34 @@
 
     <div class="pf-product__container">
         <div class="pf-container__general">
-            <img src="" alt=""/>
+            <img src="../../../assets/Img/dynamic/mcextreme.png" alt=""/>
             <div class="pf-general__data">
                 <div class="pf-data__description">
-                    <p>DESCRIPCIÓN</p>
+                    <span>DESCRIPCIÓN</span>
                     <p>Envuélvete en recuerdos con la icónica Grand McExtreme 1955 y su deliciosa salsa, acompañada de
                         cebolla asada, tomate, lechuga, carne 100% vacuno y bacon.</p>
                 </div>
 
                 <div class="pf-data__cantidad">
-                    <div class="pf-cantidad__buttons">
+                   
+                        <div class="pf-cantidad__buttons">
+                            <button class="pf-buttons__minus"></button>
+                                <span class="pf-buttons__input">3</span>
+                            <button class="pf-buttons__plus"></button>
+                        </div>
+                        <div class="pf-cantidad__precio">
+                            <span>PRECIO</span>
+                            <p>10.00 EUROS</p>
+                        </div>
+                   
 
-                    </div>
+                   
 
-                    <div class="pf-cantidad__precio">
-                        <p>PRECIO</p>
-                        <p>10.00 EUROS</p>
-                    </div>
 
-                    <a href="#">Añadir al carrito</a>
+
+<div class="pf-button-primary  pf-button-primary--fill ">
+    <a class="pf-button-primary__text" href="#">Añadir al carrito</a>
+</div>
                 </div>
             </div>
 
@@ -31,6 +40,95 @@
 
         <div class="pf-container__informacion">
             <h3 class="pf-informacion__title">Información Nutricional</h3>
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#info_nutri" aria-expanded="false" aria-controls="info_nutri">
+                        Información nutricional
+                        <span> </span>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="info_nutri" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        <div class="pf-body__energy">
+                            <p> 593Kcal</p>
+                            <span>Energía</span>
+                        </div>
+                        <div class="pf-body__datos">
+                            <ul>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="peso">Peso(g)</label>
+                                        <p>265g</p>
+                                    </div>
+                                </li>
+                                <li>   
+                                    <div class="form-group">
+                                        <label for="fibra">Fibra(g)</label>
+                                        <p>3g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="v-energeticokj">Valor Energético(kJ)</label>
+                                        <p>2843kJ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="azucares">Azúcares(g)</label>
+                                        <p>13g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="v-energeticokc">Valor Energético(kcal)</label>
+                                        <p>593Kcal</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="grasas">Grasas(g)</label>
+                                        <p>29g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="proteinas">Proteínas(g)</label>
+                                        <p>31g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="ac-saturados">Ác. Grasos Saturados(g)</label>
+                                        <p>10g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="h-carbono">Hidratos de Carbono(g)</label>
+                                        <p>51g</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label for="sal">Sal(g)</label>
+                                        <p>2.1g</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+             
+             
+              </div>
         </div>
     </div>
 

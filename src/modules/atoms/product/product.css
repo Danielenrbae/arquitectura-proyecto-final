@@ -1,0 +1,208 @@
+.pf-product {
+  width: 100%;
+  font-family: "Open Sans";
+  padding: 50px 100px; }
+  @media screen and (max-width: 1200px) {
+    .pf-product {
+      padding: 25px 50px; } }
+  @media screen and (max-width: 767px) {
+    .pf-product {
+      padding: 10px 15px;
+      text-align: center; } }
+  .pf-product .pf-product__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #2E5056;
+    position: relative;
+    margin-bottom: 45px; }
+    .pf-product .pf-product__title::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      background-color: #F5F5F5; }
+  .pf-product .pf-product__container {
+    width: 100%; }
+    .pf-product .pf-product__container .pf-container__general {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 50px; }
+      @media screen and (max-width: 1200px) {
+        .pf-product .pf-product__container .pf-container__general {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
+      .pf-product .pf-product__container .pf-container__general > img {
+        width: 380px;
+        flex: 1; }
+        @media screen and (max-width: 767px) {
+          .pf-product .pf-product__container .pf-container__general > img {
+            width: 300px; } }
+      .pf-product .pf-product__container .pf-container__general .pf-general__data {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 70px; }
+        @media screen and (max-width: 767px) {
+          .pf-product .pf-product__container .pf-container__general .pf-general__data {
+            gap: 20px; } }
+        .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__description {
+          width: 100%; }
+          .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__description > span {
+            color: #24BFA3;
+            font-weight: 600;
+            font-size: 1.5rem; }
+          .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__description > p {
+            margin-top: 5px;
+            color: #011F26;
+            font-size: 1.5rem; }
+        .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 100px; }
+          @media screen and (max-width: 1200px) {
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad {
+              margin: auto; } }
+          @media screen and (max-width: 767px) {
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad {
+              gap: 15px;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin: auto; } }
+          .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__buttons {
+            background-color: #F5F5F5;
+            border-radius: 20px;
+            padding: 14px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px; }
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__buttons .pf-buttons__input {
+              font-size: 1.3rem;
+              font-weight: 600; }
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__buttons > button {
+              width: 15px;
+              height: 15px;
+              border: none;
+              outline: none;
+              background-color: #F5F5F5; }
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__buttons .pf-buttons__minus {
+              content: "";
+              background-image: url("../../../Img/icons/icon-minus.svg");
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              cursor: pointer; }
+            .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__buttons .pf-buttons__plus {
+              content: "";
+              background-image: url("../../../Img/icons/icon-plus.svg");
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              cursor: pointer; }
+          .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__precio > span {
+            color: #24BFA3;
+            font-weight: 600;
+            font-size: 1.5rem; }
+          .pf-product .pf-product__container .pf-container__general .pf-general__data .pf-data__cantidad .pf-cantidad__precio > p {
+            color: #011F26;
+            font-weight: 600;
+            font-size: 1.5rem; }
+    .pf-product .pf-product__container .pf-container__informacion {
+      width: 100%;
+      margin-top: 50px; }
+      .pf-product .pf-product__container .pf-container__informacion .pf-informacion__title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #2E5056;
+        margin-bottom: 45px;
+        text-align: center; }
+      .pf-product .pf-product__container .pf-container__informacion .accordion {
+        border: 2px solid #D4D4D4;
+        border-left: none;
+        border-right: none;
+        padding: 10px 0px; }
+        .pf-product .pf-product__container .pf-container__informacion .accordion .card {
+          border: none; }
+          .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-header {
+            background-color: white;
+            border: none; }
+          .pf-product .pf-product__container .pf-container__informacion .accordion .card button {
+            color: #2E5056;
+            font-weight: 600;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none; }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card button:focus {
+              box-shadow: none; }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card button > span {
+              transition: transform 0.3s ease-in-out; }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card button[aria-expanded="false"] > span {
+              content: "";
+              width: 25px;
+              height: 25px;
+              background-image: url("../../../Img/icons/chevron-down.svg");
+              background-size: 100% 100%;
+              background-repeat: no-repeat; }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card button[aria-expanded="true"] > span {
+              content: "";
+              width: 25px;
+              height: 25px;
+              background-image: url("../../../Img/icons/chevron-down.svg");
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              transform: rotate(180deg); }
+          .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__energy {
+            width: fit-content;
+            margin: 0 auto; }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__energy > p {
+              font-size: 1.8rem; }
+          .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos {
+            margin: 0 auto;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 50px; }
+            @media screen and (max-width: 767px) {
+              .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos {
+                padding: 0px 20px;
+                width: 100%; } }
+            .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              width: 100%;
+              list-style: none;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              align-content: center;
+              justify-content: center;
+              grid-gap: 20px; }
+              @media screen and (max-width: 767px) {
+                .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul {
+                  grid-template-columns: repeat(1, 1fr); }
+                  .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul > li {
+                    width: 100%; } }
+              .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul > li {
+                border-bottom: 1px solid rgba(151, 151, 151, 0.4); }
+                .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul > li > .form-group {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 10px;
+                  text-align: left; }
+                  .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul > li > .form-group > label {
+                    font-size: 1.3rem;
+                    color: #011F26; }
+                  .pf-product .pf-product__container .pf-container__informacion .accordion .card .card-body .pf-body__datos ul > li > .form-group > p {
+                    border: none;
+                    min-height: 20px;
+                    font-size: 1.4rem; }
