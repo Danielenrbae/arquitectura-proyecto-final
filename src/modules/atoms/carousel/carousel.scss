@@ -1,0 +1,113 @@
+@import "../../../_scss/variables/variables";
+
+.pf-carousel {
+  width: 100%;
+  padding: 0px 100px;
+  font-family: "Open Sans";
+
+  @media screen and (max-width: 1024px) {
+    padding: 0px 20px;
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  .pf-carousel__title {
+    color: $pf-color-primary;
+    font-weight: $pf-semibold;
+    font-size: 3.5rem;
+    margin-bottom: 55px;
+  }
+
+  .pf-carousel__owl {
+    width: 100%;
+
+    .pf-owl__item {
+      > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        img {
+          width: 70%;
+        }
+
+        p {
+          color: $pf-color-secondary;
+          font-weight: $pf-semibold;
+          font-size: 1.5rem;
+         
+        }
+      }
+    }
+
+    .owl-nav {
+      position: relative;
+      margin-top: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      @media screen and (max-width: 599px) {
+        justify-content: center;
+        display: none;
+      }
+
+      &::before {
+        content: "";
+        background-color: $pf-color-light-gray;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+      }
+
+      .owl-prev {
+        > span {
+          display: none;
+        }
+
+        background-color: $pf-color-secondary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../../../Img/icons/arrow-right.svg");
+        background-size: 50% 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        &:hover {
+          background-color: $pf-color-primary;
+        }
+      }
+
+      .owl-next {
+        > span {
+          display: none;
+        }
+
+        background-color: $pf-color-secondary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../../../Img/icons/arrow-right.svg");
+        background-size: 50% 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-color: $pf-color-primary;
+        }
+      }
+    }
+
+    .owl-dots {
+      margin-top: 20px !important;
+    }
+  }
+}

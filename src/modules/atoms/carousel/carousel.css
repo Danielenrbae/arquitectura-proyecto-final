@@ -1,0 +1,79 @@
+.pf-carousel {
+  width: 100%;
+  padding: 0px 100px;
+  font-family: "Open Sans"; }
+  @media screen and (max-width: 1024px) {
+    .pf-carousel {
+      padding: 0px 20px;
+      text-align: center; } }
+  @media screen and (max-width: 767px) {
+    .pf-carousel {
+      padding: 0px 10px;
+      text-align: center; } }
+  .pf-carousel .pf-carousel__title {
+    color: #2E5056;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 55px; }
+  .pf-carousel .pf-carousel__owl {
+    width: 100%; }
+    .pf-carousel .pf-carousel__owl .pf-owl__item > a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer; }
+      .pf-carousel .pf-carousel__owl .pf-owl__item > a img {
+        width: 70%; }
+      .pf-carousel .pf-carousel__owl .pf-owl__item > a p {
+        color: #011F26;
+        font-weight: 600;
+        font-size: 1.5rem; }
+    .pf-carousel .pf-carousel__owl .owl-nav {
+      position: relative;
+      margin-top: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      @media screen and (max-width: 599px) {
+        .pf-carousel .pf-carousel__owl .owl-nav {
+          justify-content: center;
+          display: none; } }
+      .pf-carousel .pf-carousel__owl .owl-nav::before {
+        content: "";
+        background-color: #F5F5F5;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: -20px;
+        left: 0; }
+      .pf-carousel .pf-carousel__owl .owl-nav .owl-prev {
+        background-color: #011F26;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../../../Img/icons/arrow-right.svg");
+        background-size: 50% 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg); }
+        .pf-carousel .pf-carousel__owl .owl-nav .owl-prev > span {
+          display: none; }
+        .pf-carousel .pf-carousel__owl .owl-nav .owl-prev:hover {
+          background-color: #2E5056; }
+      .pf-carousel .pf-carousel__owl .owl-nav .owl-next {
+        background-color: #011F26;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../../../Img/icons/arrow-right.svg");
+        background-size: 50% 50%;
+        background-position: center;
+        background-repeat: no-repeat; }
+        .pf-carousel .pf-carousel__owl .owl-nav .owl-next > span {
+          display: none; }
+        .pf-carousel .pf-carousel__owl .owl-nav .owl-next:hover {
+          background-color: #2E5056; }
+    .pf-carousel .pf-carousel__owl .owl-dots {
+      margin-top: 20px !important; }
