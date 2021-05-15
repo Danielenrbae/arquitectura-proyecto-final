@@ -41,6 +41,9 @@ $(".pf-modal-producto__close").on("click", function () {
         $(this).parents().css("display" , "none");
 }); 
 
+$(".pf-modal-forgot__close").on("click", function () {
+    $(this).parents(".pf-modal-forgot").css("display" , "none");
+});
 
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
