@@ -66,7 +66,6 @@ $(".pf-container__desplegable").on("click", function () {
   });
   
 
-
 $(".pf-buttons__minus").on("click", function () {
   const old_val = $(".pf-buttons__input").text();
 
@@ -87,4 +86,5 @@ function comprobarCantidad(num) {
   if (num > 0 && num < 99) result = true;
   return result;
 }
+
 

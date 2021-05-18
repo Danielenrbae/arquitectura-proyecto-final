@@ -1,4 +1,5 @@
 
+
 $(".pf-carousel__owl").owlCarousel({
   loop: true,
   margin: 50,
@@ -37,6 +38,9 @@ $(".pf-modal-producto__close").on("click", function () {
         $(this).parents().css("display" , "none");
 }); 
 
+$(".pf-modal-forgot__close").on("click", function () {
+    $(this).parents(".pf-modal-forgot").css("display" , "none");
+});
 
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
@@ -62,6 +66,7 @@ $(".pf-container__desplegable").on("click", function () {
   });
   
 
+
 $(".pf-buttons__minus").on("click", function () {
   const old_val = $(".pf-buttons__input").text();
 
@@ -82,5 +87,4 @@ function comprobarCantidad(num) {
   if (num > 0 && num < 99) result = true;
   return result;
 }
-
 
