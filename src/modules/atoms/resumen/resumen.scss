@@ -1,0 +1,31 @@
+@import "../../../_scss/variables/variables";
+
+.pf-resumen{
+    font-family: 'Open Sans';
+    width: 100%;
+    padding: 0px 100px;
+
+    .pf-resumen__grafico{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .pf-resumen__title{
+        color: $pf-color-terciary;
+       font-size: 1.5rem;
+       font-weight: $pf-semibold;
+    }
+
+    .pf-resumen__subtitle{
+      
+        font-size: 3.5rem;
+        font-weight: $pf-semibold;
+        color: $pf-color-primary;
+    }
+
+    .pf-resumen__table{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}

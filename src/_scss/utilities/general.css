@@ -1,0 +1,32 @@
+.d-none {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1023px) {
+  .hide-in-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .hide-in-desktop {
+    display: none !important;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.dblock {
+  display: block !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+/*# sourceMappingURL=general.css.map */
