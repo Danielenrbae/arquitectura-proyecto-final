@@ -31,6 +31,8 @@ $(".pf-carousel__owl").owlCarousel({
 
 
 
+  $('#table_id2').DataTable();
+  
 
 
 
@@ -41,6 +43,7 @@ $(".pf-modal-producto__close").on("click", function () {
 $(".pf-modal-forgot__close").on("click", function () {
     $(this).parents(".pf-modal-forgot").css("display" , "none");
 });
+
 $(".pf-modal-sign-in__close").on("click", function () {
     // $(".pf-modal-sign-in").css("display", "none");
     $(this).parents().css("display" , "none");
@@ -87,7 +90,6 @@ function comprobarCantidad(num) {
 }
 
 
-
 const labels = ["January", "February", "March", "April", "May", "June"];
 const data = {
   labels: labels,
@@ -128,3 +130,5 @@ var myChart = new Chart(
 
   $('#table_id').DataTable();
   
+
+
