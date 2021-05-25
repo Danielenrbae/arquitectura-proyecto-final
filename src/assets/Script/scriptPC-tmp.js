@@ -1,5 +1,4 @@
 
-
 $(".pf-carousel__owl").owlCarousel({
   loop: true,
   margin: 50,
@@ -21,6 +20,8 @@ $(".pf-carousel__owl").owlCarousel({
     },
   },
 });
+
+
 
 
 
@@ -90,6 +91,7 @@ function comprobarCantidad(num) {
 }
 
 
+
 const labels = ["January", "February", "March", "April", "May", "June"];
 const data = {
   labels: labels,
@@ -130,5 +132,3 @@ var myChart = new Chart(
 
   $('#table_id').DataTable();
   
-
-
