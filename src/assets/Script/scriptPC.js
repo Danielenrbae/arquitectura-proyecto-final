@@ -3,7 +3,6 @@ $(document).ready(function(){
   
   
 
-
 $(".pf-carousel__owl").owlCarousel({
   loop: true,
   margin: 50,
@@ -25,6 +24,7 @@ $(".pf-carousel__owl").owlCarousel({
     },
   },
 });
+
 
 
 
